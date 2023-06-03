@@ -25,7 +25,7 @@
     <main>
         <section class="inventory">
 
-        <h2>Agregar Control de Calidad</h2>
+        <h2>Agregar Control de Calidadddd</h2>
             <form method="POST" action="agregar/agregar-controlcalidad.php">
                 <label for="nombre_producto">Nombre del Producto:</label>
                 <input type="text" id="nombre_producto" name="nombre_producto" required>
