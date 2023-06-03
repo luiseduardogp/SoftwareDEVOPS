@@ -6,7 +6,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
     $id = $_GET['id'];
 
     // Consulta SQL para eliminar el registro con el ID especificado
-    $sql = "DELETE FROM control_calidad WHERE id = $id";
+    $sql = "DELETE FROM dbo.control_calidad WHERE id = $id";
 
     if ($conn->query($sql) === TRUE) {
         echo "El control de calidad se eliminó correctamente.";

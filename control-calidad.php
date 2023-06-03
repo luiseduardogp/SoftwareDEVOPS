@@ -51,7 +51,7 @@
               require 'conexion.php'; // Incluir el archivo de conexión
               
               // Consulta SQL para recuperar los datos del control de calidad
-              $sql = "SELECT * FROM control_calidad";
+              $sql = "SELECT * FROM dbo.control_calidad";
               $result = $conn->query($sql);
 
               // Verificar si se encontraron registros

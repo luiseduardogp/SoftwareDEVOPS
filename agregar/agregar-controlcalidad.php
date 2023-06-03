@@ -10,7 +10,7 @@ $calidad= $_POST['calidad'];
 $tueste= $_POST['tueste'];
 
 // Consulta SQL para insertar los datos en la base de datos
-$sql = "INSERT INTO control_calidad (nombre_producto, humedad, peso, fecha_registro, calidad, tueste) VALUES ('$nombreProducto','$humedad', '$peso', '$fechaRegistro', '$calidad', '$tueste')";
+$sql = "INSERT INTO dbo.control_calidad (nombre_producto, humedad, peso, fecha_registro, calidad, tueste) VALUES ('$nombreProducto','$humedad', '$peso', '$fechaRegistro', '$calidad', '$tueste')";
 if ($conn->query($sql) === TRUE) {
     echo "El control de calidad se agregó correctamente.";
     header('refresh:2;url=../control-calidad.php');
